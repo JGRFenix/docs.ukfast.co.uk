@@ -5,7 +5,7 @@ WordPress is an incredibly powerful website CMS that powers over 40% of websites
 
 ## Monitor WordPress Activity
 
-UKFast's Threat Monitoring has the ability to track WordPress activity and detect common attacks.
+UKFast's Threat Surveillance has the ability to track WordPress activity and detect common attacks.
 
 * Plugins activated, deactivated and upgraded
 * Successful account logins
@@ -34,11 +34,11 @@ Timeframe: ```30```
 
 **Severity**
 
-Threat Monitoring will classify this attack as a high, triggering the source IP address to be blocked using the below methods. As this attack is not severe, an alert will not be sent out via email, however, these attacks will still show up in dashboards in your MyUKFast.
+Threat Surveillance will classify this attack as a high, triggering the source IP address to be blocked using the below methods. As this attack is not severe, an alert will not be sent out via email, however, these attacks will still show up in dashboards in your MyUKFast.
 
 **Remediation and Blocking**
 
-Should a high-level attack be detected, Threat Monitoring will block the source IP address using a host-based firewall, IPTables (Linux) or Windows firewall for 30 minutes.
+Should a high-level attack be detected, Threat Surveillance will block the source IP address using a host-based firewall, IPTables (Linux) or Windows firewall for 30 minutes.
 
 ## Comment Spam from fake Search Engine Bots
 
@@ -56,16 +56,16 @@ Regex: ```Googlebot | MSNBot | BingBot```
  
 **Severity**
 
-Threat Monitoring will classify this attack as a high, triggering the source IP address to be blocked using the below methods. As this attack is not severe, an alert will not be sent out via email, however, these attacks will still show up in dashboards in your MyUKFast.
+Threat Surveillance will classify this attack as a high, triggering the source IP address to be blocked using the below methods. As this attack is not severe, an alert will not be sent out via email, however, these attacks will still show up in dashboards in your MyUKFast.
 
 **Remediation and Blocking**
 
-Should a high-level attack be detected, Threat Monitoring will block the source IP address using a host-based firewall, IPTables (Linux) or Windows firewall for 30 minutes.
+Should a high-level attack be detected, Threat Surveillance will block the source IP address using a host-based firewall, IPTables (Linux) or Windows firewall for 30 minutes.
 
 
 ```eval_rst
 .. meta::
      :title: WordPress Rules | UKFast Documentation
-     :description: Guidance relating to UKFast's Threat Monitoring and Threat Response solutions
-     :keywords: threat monitoring, security, compliance, ukfast, hosting, file integrity monitoring, rootkit, detection, vulnerability scan, scans, hids, intrusion detection, threat response
+     :description: Guidance relating to UKFast's Threat Surveillance and Threat SOC solutions
+     :keywords: threat surveillance, security, compliance, ukfast, hosting, file integrity monitoring, rootkit, detection, vulnerability scan, scans, hids, intrusion detection, threat soc
 

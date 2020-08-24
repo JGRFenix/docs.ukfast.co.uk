@@ -11,5 +11,5 @@ Looking more specifically at a Network Scan, these scans tend to try and detect 
 ```eval_rst
 .. meta::
      :title: Network Scans | UKFast Documentation
-     :description: Our Threat Monitoring ruleset explained
-     :keywords: threat monitoring, alerts, security, compliance, rules, rulesets, ukfast, hosting, file integrity monitoring, rootkit, detection, vulnerability scan, 
+     :description: Our Threat Surveillance ruleset explained
+     :keywords: threat surveillance, alerts, security, compliance, rules, rulesets, ukfast, hosting, file integrity monitoring, rootkit, detection, vulnerability scan, 

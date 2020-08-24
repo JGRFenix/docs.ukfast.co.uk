@@ -66,6 +66,6 @@ By default, File Integrity Monitoring scans run every 12 hours and will alert wh
    .. title:: File Monitoring
    .. meta::
       :title: File Monitoring | UKFast Documentation
-      :description: Our Threat Monitoring ruleset explained
-      :keywords: threat monitoring, alerts, security, compliance, rules, rulesets, ukfast, hosting, file integrity monitoring, rootkit, detection, vulnerability scan, scans, hids, intrusion detection, set up
+      :description: Our Threat Surveillance ruleset explained
+      :keywords: threat surveillance, alerts, security, compliance, rules, rulesets, ukfast, hosting, file integrity monitoring, rootkit, detection, vulnerability scan, scans, hids, intrusion detection, set up
 ```

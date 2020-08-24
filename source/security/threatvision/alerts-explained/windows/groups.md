@@ -16,11 +16,11 @@ There are lots of default groups that you might find on a windows environment. S
      * Remote Desktop Users
      * Server Operators
 
-UKFast Threat Monitoring will monitor all of these and more, to see if any of these change (Have users or computers/servers added or removed from it)
+UKFast Threat Surveillance will monitor all of these and more, to see if any of these change (Have users or computers/servers added or removed from it)
 
 
 ```eval_rst
 .. meta::
      :title: Windows Groups Explained | UKFast Documentation
-     :description: Our Threat Monitoring ruleset explained
-     :keywords: threat monitoring, alerts, security, compliance, rules, rulesets, ukfast, hosting, file integrity monitoring, rootkit, detection, vulnerability scan, scans, hids, intrusion detection, set up
+     :description: Our Threat Surveillance ruleset explained
+     :keywords: threat surveillance, alerts, security, compliance, rules, rulesets, ukfast, hosting, file integrity monitoring, rootkit, detection, vulnerability scan, scans, hids, intrusion detection, set up

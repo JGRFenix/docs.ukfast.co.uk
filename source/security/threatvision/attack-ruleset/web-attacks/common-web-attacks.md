@@ -1,7 +1,7 @@
 
 # Common Web Attacks
 
-Web attacks are perhaps one of the most common attacks on Internet-facing systems, and they're only becoming more of a danger. UKFast's Threat Monitoring has a range of rules dedicated to detecting and blocking common web-based attacks and malicious connection attempts. 
+Web attacks are perhaps one of the most common attacks on Internet-facing systems, and they're only becoming more of a danger. UKFast's Threat Surveillance has a range of rules dedicated to detecting and blocking common web-based attacks and malicious connection attempts. 
 
 ## SQL Injection
 
@@ -25,13 +25,13 @@ Regex: ```%2Bchar\(\d+\)%2Bchar\(\d+\)%2Bchar\(\d+\)%2Bchar\(\d+\)%2Bchar\(\d+\)
 
 **Severity**
 
-Although dangerous, Threat Monitoring will not immediately block an IP if a SQL injection is detected. This is to prevent more advanced, legitimate web queries from immediately being blocked. If an IP continues to submit SQL injection requests, the IP will be blocked, see the 'Remediations and blocking' section below
+Although dangerous, Threat Surveillance will not immediately block an IP if a SQL injection is detected. This is to prevent more advanced, legitimate web queries from immediately being blocked. If an IP continues to submit SQL injection requests, the IP will be blocked, see the 'Remediations and blocking' section below
 
 **Remediation and Blocking**
 
-Threat Monitoring will block the IP of 8 or more SQL Injection signatures are detected within 120 seconds. The IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
+Threat Surveillance will block the IP of 8 or more SQL Injection signatures are detected within 120 seconds. The IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
 
-Additionally, If an XSS attack returns a code 200 (Web Request success), Threat Monitoring will check the source IP address against AbuseIPDB. If the IP is known for malicious activity within the last 14 days, the IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
+Additionally, If an XSS attack returns a code 200 (Web Request success), Threat Surveillance will check the source IP address against AbuseIPDB. If the IP is known for malicious activity within the last 14 days, the IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
 
 
 Attackers will commonly try SQL injections on your site, the best ways to prevent these attacks from being successful are:
@@ -59,13 +59,13 @@ Regex: ```%3Cscript | %3C%2Fscript | script> | script%3E | SRC=javascript | IMG%
 
 **Severity**
 
-Although dangerous, Threat Monitoring will not immediately block an IP if an XSS attack is detected. This is to prevent more advanced, legitimate web queries from immediately being blocked. If an IP continues to submit XSS requests, the IP will be blocked, see the 'Remediations and blocking' section below
+Although dangerous, Threat Surveillance will not immediately block an IP if an XSS attack is detected. This is to prevent more advanced, legitimate web queries from immediately being blocked. If an IP continues to submit XSS requests, the IP will be blocked, see the 'Remediations and blocking' section below
 
 **Remediation and Blocking**
 
-Threat Monitoring will block the IP if 10 or more XSS Injection signatures are detected within 120 seconds. The IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
+Threat Surveillance will block the IP if 10 or more XSS Injection signatures are detected within 120 seconds. The IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
 
-Additionally, If an XSS attack returns a code 200 (Web Request success), Threat Monitoring will check the source IP address against AbuseIPDB. If the IP is known for malicious activity within the last 14 days, the IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
+Additionally, If an XSS attack returns a code 200 (Web Request success), Threat Surveillance will check the source IP address against AbuseIPDB. If the IP is known for malicious activity within the last 14 days, the IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
 
 
 Attackers will commonly try XSS  injections on your site, the best ways to prevent these attacks from being successful are:
@@ -94,13 +94,13 @@ Regex: ```"\(\)\s*{\s*_;\.*}\s*>_[\$\(\$\(\)\)]\s*{ | "\(\)\s*{\s*:;\s*}\s*; | "
 
 Rated 10/10 for severity by NIST (National Institute of Standards and Technology) a shell shock attack certainly has the potential to cause damage. If no action is taken to prevent against this attack, then your server could be left open to a very common and very exploitable attack that easily allows attackers access to your server.
 
-Threat Monitoring assignees shellshock attacks level 15 severity.
+Threat Surveillance assignees shellshock attacks level 15 severity.
 
 **Remediation and Blocking**
 
-As this alert is high severity, Threat Monitoring will automatically block the source IP address of any web request that is detected to be attempting a shell shock attack. 
+As this alert is high severity, Threat Surveillance will automatically block the source IP address of any web request that is detected to be attempting a shell shock attack. 
 
-To protect against this vulnerability, you should ensure that your system is up-to-date and that preventative measures (like Threat Monitoring) are in place.
+To protect against this vulnerability, you should ensure that your system is up-to-date and that preventative measures (like Threat Surveillance) are in place.
 
 Many vulnerability scanners will run a non-malicious shellshock attack against a target system, as a result, false positive alerts may trigger when an ASV's system scans your server. 
 
@@ -122,13 +122,13 @@ Regex: ```%027 | %00 | %01 | %7f | %2E%2E | %0A | %0D | ../..|..\.. | echo; | ..
 
 **Severity**
 
-Although dangerous, Threat Monitoring will not immediately block an IP if a Directory Traversal attack is detected. This is to prevent more advanced, legitimate web queries from immediately being blocked. If an IP continues to submit Directory Traversal requests, the IP will be blocked, see the 'Remediations and blocking' section below
+Although dangerous, Threat Surveillance will not immediately block an IP if a Directory Traversal attack is detected. This is to prevent more advanced, legitimate web queries from immediately being blocked. If an IP continues to submit Directory Traversal requests, the IP will be blocked, see the 'Remediations and blocking' section below
 
 **Remediation and Blocking**
 
-Threat Monitoring will block the IP if 10 or more Directory Traversal signatures are detected within 120 seconds. The IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
+Threat Surveillance will block the IP if 10 or more Directory Traversal signatures are detected within 120 seconds. The IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
 
-Additionally, If a Directory Traversal attack returns a code 200 (Web Request success), Threat Monitoring will check the source IP address against AbuseIPDB. If the IP is known for malicious activity within the last 14 days, the IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
+Additionally, If a Directory Traversal attack returns a code 200 (Web Request success), Threat Surveillance will check the source IP address against AbuseIPDB. If the IP is known for malicious activity within the last 14 days, the IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
 
 ## Command Injection
 
@@ -148,13 +148,13 @@ Regex: ```cmd.exe | root.exe | _mem_bin | msadc | /winnt/ | /boot.ini | /x90/ | 
 
 **Severity**
 
-Although dangerous, Threat Monitoring will not immediately block an IP if a Command Injection attack is detected. This is to prevent more advanced, legitimate web queries from immediately being blocked. If an IP continues to submit Command Injection requests, the IP will be blocked, see the 'Remediations and blocking' section below
+Although dangerous, Threat Surveillance will not immediately block an IP if a Command Injection attack is detected. This is to prevent more advanced, legitimate web queries from immediately being blocked. If an IP continues to submit Command Injection requests, the IP will be blocked, see the 'Remediations and blocking' section below
 
 **Remediation and Blocking**
 
-Threat Monitoring will block the IP if 10 or more Command Injection signatures are detected within 120 seconds. The IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
+Threat Surveillance will block the IP if 10 or more Command Injection signatures are detected within 120 seconds. The IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
 
-Additionally, If a Command Injection attack returns a code 200 (Web Request success), Threat Monitoring will check the source IP address against AbuseIPDB. If the IP is known for malicious activity within the last 14 days, the IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
+Additionally, If a Command Injection attack returns a code 200 (Web Request success), Threat Surveillance will check the source IP address against AbuseIPDB. If the IP is known for malicious activity within the last 14 days, the IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
 
 ## Remote file inclusion (RFI)
 
@@ -189,13 +189,13 @@ Regex: ```?\S+=http://\d+.\d+.\d+.\d+/\S+ | ?\S+=https://\d+.\d+.\d+.\d+/\S+```
 
 **Severity**
 
-Although dangerous, Threat Monitoring will not immediately block an IP if an RFI attack is detected. This is to prevent more advanced, legitimate web queries from immediately being blocked. If an IP continues to submit RFI requests, the IP will be blocked, see the 'Remediations and blocking' section below
+Although dangerous, Threat Surveillance will not immediately block an IP if an RFI attack is detected. This is to prevent more advanced, legitimate web queries from immediately being blocked. If an IP continues to submit RFI requests, the IP will be blocked, see the 'Remediations and blocking' section below
 
 **Remediation and Blocking**
 
-Threat Monitoring will block the IP if 10 or more RFI signatures are detected within 120 seconds. The IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
+Threat Surveillance will block the IP if 10 or more RFI signatures are detected within 120 seconds. The IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
 
-Additionally, If an RFI attack returns a code 200 (Web Request success), Threat Monitoring will check the source IP address against AbuseIPDB. If the IP is known for malicious activity within the last 14 days, the IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
+Additionally, If an RFI attack returns a code 200 (Web Request success), Threat Surveillance will check the source IP address against AbuseIPDB. If the IP is known for malicious activity within the last 14 days, the IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
 
 To disable the ability to include remote files completely, you can set `allow_url_include` to `off` in your php.ini or .htaccess file
 
@@ -211,7 +211,7 @@ POST request bots are not specifically dangerous, but detecting them can be a vi
 
 **Remediation and Blocking**
 
-Threat Monitoring will block the IP if 16 or more POST requests are detected within 20 seconds. The IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
+Threat Surveillance will block the IP if 16 or more POST requests are detected within 20 seconds. The IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
 
 ## Malicious User Agents
 
@@ -225,7 +225,7 @@ Most web-based traffic will be accompanied by a user agent tag. This user agent 
  
  It looks confusing because, well, it is, but that's for another time :P 
  
- Malicious programs will often also pass their unique user agent or the more deceptive programs may try to imitate a more common user agent like the above, but accidentally misspell some aspects. Threat Monitoring can detected many of these malicious user agents and block them. See the Remediation and Blocking section below for more information.
+ Malicious programs will often also pass their unique user agent or the more deceptive programs may try to imitate a more common user agent like the above, but accidentally misspell some aspects. Threat Surveillance can detected many of these malicious user agents and block them. See the Remediation and Blocking section below for more information.
 
 **Signatures detected**
 
@@ -237,11 +237,11 @@ Regex: ```"ZmEu" |  "libwww-perl/ | "the beast" | "Morfeus | "ZmEu | "Nikto | "w
 
 **Severity**
 
-Taking more of a passive approach, this rule does not necessarily detect that an attack is in progress, but that a user is using a software/device that is commonly used for attacks. As a result of these, Threat Monitoring classified these as level 7. IPs that use malicious user agents will be blocked, but an alert will not be sent.
+Taking more of a passive approach, this rule does not necessarily detect that an attack is in progress, but that a user is using a software/device that is commonly used for attacks. As a result of these, Threat Surveillance classified these as level 7. IPs that use malicious user agents will be blocked, but an alert will not be sent.
 
 **Remediation and Blocking**
 
-Threat Monitoring will block the IP if a malicious user agent is detected. The IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
+Threat Surveillance will block the IP if a malicious user agent is detected. The IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
 
 
 ## PHP CGI-bin Vulnerabilities
@@ -263,7 +263,7 @@ Regex: ```?-d | ?-s | ?-a | ?-b | ?-w```
 
 **Severity**
 
-Although dangerous, Threat Monitoring will not immediately block an IP if PHP CGI-bin Vulnerability is detected. This is to prevent more advanced, legitimate web queries from immediately being blocked. If an IP continues to submit PHP CGI-bin Vulnerability requests, the IP will be blocked, see the 'Remediations and blocking' section below
+Although dangerous, Threat Surveillance will not immediately block an IP if PHP CGI-bin Vulnerability is detected. This is to prevent more advanced, legitimate web queries from immediately being blocked. If an IP continues to submit PHP CGI-bin Vulnerability requests, the IP will be blocked, see the 'Remediations and blocking' section below
 
 Another way to secure your site against this type of attack is to configure your site to not accept requests starting with a '-' and not containing a '=' through. A rule like the below could be used on apache sites using mod_rewrite:
 
@@ -274,7 +274,7 @@ Another way to secure your site against this type of attack is to configure your
 
 **Remediation and Blocking**
 
-Threat Monitoring will block the IP if a malicious user agent is detected. The IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
+Threat Surveillance will block the IP if a malicious user agent is detected. The IP will be blocked via IPTables and hosts.deny (Linux) or Windows Firewall for 30 minutes.
 
 ## PHP Info Scans
 
@@ -296,7 +296,7 @@ This rule will not specifically indicate an attack, but more if a reconnaissance
 
 **Remediation and Blocking**
 
-Taking more of a passive approach, this rule does not necessarily detect that an attack is in progress, but version gathering may be in progress. As a result of these, Threat Monitoring classified these as level 6. This event may show up in MyUKFast, but an alert will not be sent and the IP will not be blocked.
+Taking more of a passive approach, this rule does not necessarily detect that an attack is in progress, but version gathering may be in progress. As a result of these, Threat Surveillance classified these as level 6. This event may show up in MyUKFast, but an alert will not be sent and the IP will not be blocked.
 
 ---
 
@@ -305,6 +305,6 @@ Taking more of a passive approach, this rule does not necessarily detect that an
 ```eval_rst
 .. meta::
      :title: Web Attacks | UKFast Documentation
-     :description: Guidance relating to UKFast's Threat Monitoring and Threat Response solutions
-     :keywords: threat monitoring, security, compliance, ukfast, hosting, file integrity monitoring, rootkit, detection, vulnerability scan, scans, hids, intrusion detection, threat response
+     :description: Guidance relating to UKFast's Threat Surveillance and Threat Soc solutions
+     :keywords: threat surveillance, security, compliance, ukfast, hosting, file integrity monitoring, rootkit, detection, vulnerability scan, scans, hids, intrusion detection, threat soc
 

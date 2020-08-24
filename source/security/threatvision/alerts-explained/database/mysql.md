@@ -33,5 +33,5 @@ Usually, this command is intentionally issued to the MySQL server. If it is not,
 ```eval_rst
 .. meta::
      :title: MySQL Rules Explained | UKFast Documentation
-     :description: Our Threat Monitoring ruleset explained
-     :keywords: threat monitoring, alerts, security, compliance, rules, rulesets, ukfast, hosting, file integrity monitoring, rootkit, detection, vulnerability scan, scans, hids, intrusion detection, set up
+     :description: Our Threat Surveillance ruleset explained
+     :keywords: threat surveillance, alerts, security, compliance, rules, rulesets, ukfast, hosting, file integrity monitoring, rootkit, detection, vulnerability scan, scans, hids, intrusion detection, set up

@@ -24,5 +24,5 @@ Checking that no automated scripts try to restart the PostgreSQL service is para
 ```eval_rst
 .. meta::
      :title: PostgreSQL rules Explained | UKFast Documentation
-     :description: Our Threat Monitoring ruleset explained
-     :keywords: threat monitoring, alerts, security, compliance, rules, rulesets, ukfast, hosting, file integrity monitoring, rootkit, detection, vulnerability scan, scans, hids, intrusion detection, set up
+     :description: Our Threat Surveillance ruleset explained
+     :keywords: threat surveillance, alerts, security, compliance, rules, rulesets, ukfast, hosting, file integrity monitoring, rootkit, detection, vulnerability scan, scans, hids, intrusion detection, set up

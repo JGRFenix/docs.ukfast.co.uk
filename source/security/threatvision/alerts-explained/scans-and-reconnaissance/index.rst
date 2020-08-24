@@ -1,6 +1,6 @@
 .. meta::
    :title: Scans and Reconnaissance| UKFast Documentation
-   :description: Guidance on Threat Monitoring and Threat Response solutions from UKFast
+   :description: Guidance on Threat Surveillance and Threat SOC solutions from UKFast
    :keywords: security, threat, monitoring, response, alerts, blocking, hacking, ransomware, protection
 
 =====================================
@@ -11,7 +11,7 @@ Before attacking, many targeted attacks and bots will perform a network scan on 
 
 For example, if you were running a vulnerable version of Exim on a common mail port, then the attacker could launch an RCE attack (CVE-2019-15846) against your server.
 
-Threat Monitoring can detect when a network scan or version gathering scan may be in progress, and take the needed actions to block the scan.
+Threat Surveillance can detect when a network scan or version gathering scan may be in progress, and take the needed actions to block the scan.
 
 .. toctree::
    :maxdepth: 1
