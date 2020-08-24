@@ -34,3 +34,15 @@ Expanding further into a detected item, we can see exactly what this vulnerabili
 ![vuln-scan-item-expanded](files/vuln-scan-item-expanded.PNG)
 
 </div>
+
+## Internal and External scans
+
+As mentioned above there are two types of vulnerability scans that we support. An internal vulnerability scan and a external vulnerability scan. 
+
+### Internal Scans
+
+The point of the internal scans are to scan your server from the inside allowing it to detect vulnerabilities as a much greater depth. These scans will often highlight issues like vulnerabilities in a certain version of a program or a mis-configuration causing a vulnerability. 
+
+### External Scans
+
+The point of the external scans are to scan the target from outside the network. This will let you see the same as an attacker on the internet would see. This is useful for finding vulnerabilities in services that are open to the internet for example: web servers (like [apache](https://nvd.nist.gov/vuln/detail/CVE-2020-11984)) or email servers (like [exim](https://nvd.nist.gov/vuln/detail/CVE-2019-10149)) 
