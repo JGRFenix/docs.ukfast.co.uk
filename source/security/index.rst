@@ -14,6 +14,7 @@ UKFast security products
    ddos/index
    webapplicationfirewall/index
    threatmonitoring/index
+   threatvision/index
    antivirus/index
    vulnerabilityscans
 
