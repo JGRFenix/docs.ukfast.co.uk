@@ -7,10 +7,17 @@
 Threat Vision
 =====================================
 
+.. raw:: html
+
+   <div style="text-align: center;">
+
 .. image:: files/threat-vision-logo-dark.png
    :width: 600
    :alt: Threat Vision
 
+.. raw:: html
+
+   </div>
 
 Put your environment's security first, with UKFast's suite of security services offering vulnerability scanning, endpoint monitoring and threat response. Offering a tiered approach, the Threat Vision security stack allows you to expand your security capabilities as you see fit coupled with simple clear pricing to avoid unwanted surprises.
 
@@ -19,6 +26,8 @@ Put your environment's security first, with UKFast's suite of security services 
    :maxdepth: 1
 
    threatscan/index
+   threatsurveillance/index
+   threatsoc/index
 
 
 Threat Scan
@@ -43,10 +52,18 @@ Through an easy to use dashboard and control panel, all data collected through T
 
 More information on Threat Surveillance can be found on our :doc:`/security/threatvision/threatsurveillance/index` documentation.
 
+.. raw:: html
+
+   <div style="text-align: center;">
+
+
 .. image:: files/myukfast-1.png
    :width: 800
    :alt: MyUKFast
 
+.. raw:: html
+
+   </div>
 
 Threat SOC
 ##############################

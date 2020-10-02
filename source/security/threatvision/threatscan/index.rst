@@ -1,13 +1,15 @@
-.. meta::
-   :title: Threat Scan | UKFast Documentation
-   :description: Guidance on Threat Vision from UKFast
-   :keywords: security, threat, monitoring, monitoring, scan, surveillance, soc, response, alerts, blocking, hacking, ransomware, protection
-
 =====================================
 Threat Scan
 =====================================
 
 Threat Scan is our base tier, providing a robust, clear and concise vulnerability scanning platform that can be used to hunt down security holes in your environment via external vulnerability scans. Threat Scan allows for unlimited scans to be ran either on demand or on a schedule, allowing around the clock scanning.
+
+.. toctree::
+   :maxdepth: 2
+
+   targets
+   launching-a-scan
+   managing-scans
 
 Our Threat Scan platform allows you to run both internal and external vulnerability scans, both evaluate based of the PCI DSS 3.2.1 baseline standard.
 
@@ -23,9 +25,7 @@ Internal scans are also available for UKFast hosted servers. These internal scan
 
 UKFast recommends that internal scans be performed at least every 2 weeks to maintain viability of your environment's vulnerabilities.
 
-Further documentation on using Threat Scan can be found below.
-
-.. toctree::
-   :maxdepth: 2
-
-   launching-a-scan
+.. meta::
+   :title: Threat Scan | UKFast Documentation
+   :description: Guidance on Threat Vision from UKFast
+   :keywords: security, threat, monitoring, monitoring, scan, surveillance, soc, response, alerts, blocking, hacking, ransomware, protection
