@@ -2,6 +2,21 @@
 Threat Scan
 =====================================
 
+.. raw:: html
+
+   <div style="text-align: center;">
+
+
+.. image:: files/threat-scan.png
+   :width: 128
+   :alt: ThreatScan
+
+.. raw:: html
+
+   </div>
+
+------------
+
 Threat Scan is our base tier, providing a robust, clear and concise vulnerability scanning platform that can be used to hunt down security holes in your environment via external vulnerability scans. Threat Scan allows for unlimited scans to be ran either on demand or on a schedule, allowing around the clock scanning.
 
 .. toctree::
@@ -21,7 +36,7 @@ UKFast recommends that external scans be performed at least every 2 weeks to mai
 
 **What is an Internal scan?**
 
-Internal scans are also available for UKFast hosted servers. These internal scans use a lightweight software agent installed into your endpoint to scan the running operating system for vulnerabilities. This access to the system allows under the hood vulnerabilities to be found that are not directly exposed to the outside word. For example, internal scans may highlight outdated software, missing kernel patches, misconfigured services and malicious processes.
+Internal scans are also available for UKFast hosted servers when paired with Threat Surveillance. These internal scans use a lightweight software agent installed into your endpoint to scan the running operating system for vulnerabilities. This access to the system allows under the hood vulnerabilities to be found that are not directly exposed to the outside word. For example, internal scans may highlight outdated software, missing kernel patches, misconfigured services and malicious processes.
 
 UKFast recommends that internal scans be performed at least every 2 weeks to maintain viability of your environment's vulnerabilities.
 

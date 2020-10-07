@@ -2,6 +2,21 @@
 Threat Surveillance
 =====================================
 
+.. raw:: html
+
+   <div style="text-align: center;">
+
+
+.. image:: files/threat-surveillance.png
+   :width: 128
+   :alt: ThreatSurveillance
+
+.. raw:: html
+
+   </div>
+
+------------
+
 Threat Surveillance from UKFast is our tailored, all in one HIDS/SIEM system that enables you to continually monitor for malicious activity on your IT environment. Collating and parsing logs from critical services like SSH, RDP and web traffic, Threat Surveillance can hunt down and block attackers automatically, while providing you with real-time alerts of threat activity.
 
 .. toctree::
@@ -14,6 +29,7 @@ Threat Surveillance from UKFast is our tailored, all in one HIDS/SIEM system tha
    Installing on a non-UKFast hosted server <non-ukfast-install>
    pci-dss
    alerts
+   Alerts explained <alerts-explained/index>
    Alert remediation tips <alert-remediation-tips/index>
 
 
