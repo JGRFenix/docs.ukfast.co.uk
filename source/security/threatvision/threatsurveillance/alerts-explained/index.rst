@@ -12,7 +12,7 @@ Understanding Threat Surveillance alerts is key to ensuring that your server is 
 Our alerts are split into a number of groups/categories. The main categories are:
 
 * File Integrity Monitoring
-* Brute force
+* Common Attacks
 * Expoit attempts
 * Malware
 * Scanning and reconnisance
@@ -26,4 +26,6 @@ Alternatively, a full document tree is shown below.
 .. toctree::
    :maxdepth: 3
    
+   common-attacks/index
    exploit-attempts/index
+   suspicious-activity/index
