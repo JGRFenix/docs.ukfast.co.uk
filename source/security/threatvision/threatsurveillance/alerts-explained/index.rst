@@ -25,11 +25,5 @@ Alternatively, a full document tree is shown below.
 
 .. toctree::
    :maxdepth: 3
-
-   file-integrity-monitoring/index
-   brute-force/index
+   
    exploit-attempts/index
-   malware/index
-   scanning-and-recon/index
-   suspicious-activity/index
-   system-activity/index
