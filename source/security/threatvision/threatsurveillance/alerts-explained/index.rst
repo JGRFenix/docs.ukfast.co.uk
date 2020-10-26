@@ -29,3 +29,4 @@ Alternatively, a full document tree is shown below.
    common-attacks/index
    exploit-attempts/index
    suspicious-activity/index
+   file-integrity-monitoring/index
