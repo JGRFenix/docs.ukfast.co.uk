@@ -22,3 +22,4 @@ With this additional information, a File Change Alert can easily be recognised a
    fim-file-added
    fim-file-changed
    fim-file-deleted
+   

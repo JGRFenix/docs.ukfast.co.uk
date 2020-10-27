@@ -21,3 +21,4 @@ Alternatively, a full document tree for this category is shown below.
    :maxdepth: 2
    
    null-user-changed-some-information
+   windows-group
